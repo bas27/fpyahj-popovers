@@ -1,7 +1,7 @@
 import { Popover } from './popover';
 
 const messageHeader = 'Popover title';
-const messageBody = 'И вот несколько удивительных материалов. Это очень увлекательно. Верно? ';
+const messageBody = "And here's some amazing content. It's very engaging. Right?";
 const popoverFactory = new Popover();
 const btn = document.getElementById('btn-popover');
 btn.addEventListener('click', (e) => {
