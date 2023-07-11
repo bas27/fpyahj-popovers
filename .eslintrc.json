@@ -1,15 +1,22 @@
 {
-  "extends": ["eslint:recommended"],
+  "extends": "airbnb-base",
   "env": {
     "es6": true,
     "browser": true,
-    "jest/globals": true
+    "jest": true
   },
   "parserOptions": {
+    "ecmaVersion": "2016",
+    "parser": "@babel/eslint-parser",
     "sourceType": "module"
   },
   "rules": {
-    "no-unused-vars": "warn"
+    "no-unused-vars": "warn",
+    "no-restricted-syntax": [
+      "error",
+      "LabeledStatement",
+      "WithStatement"
+    ]
   },
   "overrides": [
     {
