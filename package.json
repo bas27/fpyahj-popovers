@@ -15,7 +15,8 @@
     "preshow:doc": "npm run doc",
     "show:doc": "live-server doc",
     "preshow:dist": "npm run build",
-    "show:dist": "live-server dist"
+    "show:dist": "live-server dist",
+    "e2e": "jest --testPathPattern=./e2e/ --runInBand"
   },
   "author": "alexander b",
   "license": "MIT",

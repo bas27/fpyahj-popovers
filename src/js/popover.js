@@ -4,6 +4,8 @@ export default class Popover {
     this.title = element.dataset.popoverTitle;
     this.content = element.dataset.popoverContent;
     this.html = this.createPopover();
+
+    this.removePopover = this.removePopover.bind(this);
   }
 
   createPopover() {
@@ -30,6 +32,7 @@ export default class Popover {
     this.html.style.left = `${left + width / 2 - this.html.offsetWidth / 2}px`;
   }
 
+  // eslint-disable-next-line class-methods-use-this
   removePopover() {
     const currentPopover = document.querySelector('.popover');
     if (currentPopover) {
