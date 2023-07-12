@@ -1,4 +1,5 @@
 # Домашнее задание к занятию "Работа с HTML-формами"
+[![Build status](https://ci.appveyor.com/api/projects/status/9goao3xuodhu6xlm?svg=true)](https://ci.appveyor.com/project/bas27/fpyahj-popovers)
 
 Правила сдачи задания:
 

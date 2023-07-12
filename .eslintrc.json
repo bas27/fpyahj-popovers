@@ -6,7 +6,7 @@
     "jest": true
   },
   "parserOptions": {
-    "ecmaVersion": "2016",
+    "ecmaVersion": "latest",
     "parser": "@babel/eslint-parser",
     "sourceType": "module"
   },

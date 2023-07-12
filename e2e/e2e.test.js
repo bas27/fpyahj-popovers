@@ -34,10 +34,10 @@ describe('Popover', () => {
   });
 
   test('should show on the page', async () => {
-    await page.goto('http://localhost:4000/', { waitUntil: 'load' });
+    await page.goto('http://localhost:9000/', { waitUntil: 'load' });
     await page.waitForSelector('.container');
 
-    const buttons = await page.$$('.button');
+    const buttons = await page.$$('.btn');
 
     await buttons[0].click();
 
@@ -45,10 +45,10 @@ describe('Popover', () => {
   });
 
   test('should hide on the page', async () => {
-    await page.goto('http://localhost:4000/', { waitUntil: 'load' });
+    await page.goto('http://localhost:9000/', { waitUntil: 'load' });
     await page.waitForSelector('.container');
 
-    const buttons = await page.$$('.button');
+    const buttons = await page.$$('.btn');
 
     await buttons[0].click();
     await buttons[0].click();
@@ -57,10 +57,10 @@ describe('Popover', () => {
   });
 
   test('should show new popover and hide latest popover on the page', async () => {
-    await page.goto('http://localhost:4000/', { waitUntil: 'load' });
+    await page.goto('http://localhost:9000/', { waitUntil: 'load' });
     await page.waitForSelector('.container');
 
-    const buttons = await page.$$('.button');
+    const buttons = await page.$$('.btn');
 
     await buttons[1].click();
     await page.waitForSelector('.popover');
